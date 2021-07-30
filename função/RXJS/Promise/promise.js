@@ -1,0 +1,5 @@
+let p = new Promise(resolve => resolve(["Ana", "Bia", "Carlos", "Daniel"]))
+  .then(valor => valor[0])
+  .then(valor => valor[0])
+  .then(valor => valor.toLowerCase())
+  .then(console.log)

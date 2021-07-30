@@ -1,0 +1,37 @@
+help
+--------------------------------------------------------------------------
+cls limpa o terminal
+--------------------------------------------------------------------------
+use 'nome do banco' 
+--------------------------------------------------------------------------
+db.createCollection('estados') casesensitive
+--------------------------------------------------------------------------
+show dbs Mostra os bancos de dados
+--------------------------------------------------------------------------
+show collections Mostra as 'tabelas'
+--------------------------------------------------------------------------
+db.createCollection('Estados') CaseSensitive
+--------------------------------------------------------------------------
+db.Estados.drop() Exclui collection
+-------------------------------------uma ---------------------------------
+db.'collection'.insert({}) inserir um dados
+--------------------------------------------------------------------------
+db.'collection'.save({}) inserir ou atualizar
+--------------------------------------------------------------------------
+db.'collection'.find() consulta o banco
+--------------------------------------------------------------------------
+db.'collection'.find().pretty() consulta o banco formatado no formato JSON
+--------------------------------------------------------------------------
+db.help() mostra metodos para execultar 
+--------------------------------------------------------------------------
+db.'collection'.findOne({'filtro'}) findOne traz o primeiro, filtro opcional.
+--------------------------------------------------------------------------
+db.'collection'.find().skip(n) pula uma quantidade de collections
+--------------------------------------------------------------------------
+db.'collection'.find().skip(n).limit() pula uma quantidade de collections, e tbm limita a qtd de resultados
+--------------------------------------------------------------------------
+db.'collection'.count() mostra a quantidade.
+--------------------------------------------------------------------------
+db.'collection'.find({'chave': "valor"}, {'attr1': 1, 'attr2': 1}) filtro para achar uma collection e o segundo parametro filtra os attr desta collection 1 = true, 0 = false.
+--------------------------------------------------------------------------
+db.'collection'.aggregate() consultas com agregação/pipe

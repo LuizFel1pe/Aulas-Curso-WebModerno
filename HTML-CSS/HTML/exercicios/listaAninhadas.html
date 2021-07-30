@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<style>
+  [wb-folder]:hover {
+    cursor: pointer;
+  }
+</style>
+<h1>Projeto</h1>
+<ul class="tree">
+  <li>
+    <span wb-folder>Backend</span> 
+    <ul>
+      <li>
+        <span wb-folder>app</span>
+        <ul>
+          <li>produto.js</li>
+          <li>usuario.js</li>
+          <li>venda.js</li>
+        </ul>
+        <li>
+          <span wb-folder>config</span>
+          <ul>
+            <li>banco.js</li>
+            <li>rotas.js</li>
+            <li>server.js</li>
+          </ul>
+        </li>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <span wb-folder>frontend</span> 
+    <ul>
+      <li>
+        <span wb-folder>Public</span>
+        <ul>
+          <li>app.css</li>
+          <li>index.html</li>
+          <li>app.js</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<script>
+  const folder = document.querySelectorAll('[wb-folder]')
+  folder.forEach(e => {
+    e.onclick = el => {
+    const ul = e.nextElementSibling
+    const display = ul.style.display
+    ul.style.display = display === 'none' ? 'block' : 'none'
+    }
+  })
+</script>
